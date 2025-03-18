@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /*colors*/
+    --primary-color: #f7b538;
+    --bestre: #352208;
+    --gun-metal: #00272b;
+    --hunter: #fffcdc;
+    --dark-sienna: #3d0c02;
+    --chartreuse: #e0ff4f;
+    --dark-chestnut: #b6451d; 
+    --creamy: #e1bb80;
+    --gold-crayola: hsl(38, 61%, 73%);
+    --black: hsla(40, 12%, 5%, 1);
+    --white: hsla(40, 12%, 95%, 1);
+    --grey: hsla(40, 12%, 50%, 1);
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+    background-image: url(imgs/back.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    text-align: center;
+    color: var(--bestre);
+}
+p{
+    font-size: 1.2rem;
+    color: var(--white);
+}
+
+.navbar{
+    background: transparent;
+    backdrop-filter: blur(5px);
+    border: 1px solid var(--creamy);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.navbar-light .navbar-brand{
+    color: var(--chartreuse);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link{
+    padding: 0 20px;
+    color: var(--chartreuse);
+    transition: 0.4s ease;
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link:hover,
+.navbar i:hover,
+.navbar-light .navbar-nav .nav-item .nav-link.active,
+.navbar i:hover{
+    color: var(--hunter);
+}
+
+.nav-link{
+    position: relative;
+}
+
+.nav-link span{
+    position: absolute;
+}
+
+.navbar i{
+    font-size: 1.2rem;
+    padding: 0 0.7px;
+    transition: 0.4s ease;
+    font-weight: 500;
+    cursor: pointer;
+    margin-left: 5px;
+}
