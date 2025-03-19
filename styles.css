@@ -43,6 +43,10 @@ p{
     color: var(--white);
 }
 
+a{
+    text-align: center;
+}
+
 .navbar{
     background: transparent;
     backdrop-filter: blur(5px);
