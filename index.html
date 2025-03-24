@@ -11,18 +11,12 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-
-    <style>
-        .transparent-bg {
-            background: transparent;
-        }
-    </style>
 <head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light sticky-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            <img src="/imgs/logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            <img src="Assets/imgs/logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
               RayShoe Shop</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -51,15 +45,12 @@
                 <a class="nav-link" href="#">Contact Us</a>
               </li>
               <li class="nav-item">
-                <a href="cart.php"><i class='bx bx-cart'></i>
+                <a href="#" onclick="openCart()"><i class='bx bx-cart'></i>
                 <span id="cart-item" class="badge badge-danger"></span></a>
                 <a href="#"><i class='bx bx-user'></i>Login</a>
               </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+            <input type="text" id="search-input" placeholder="Search shoes...">
           </div>
         </div>
     </nav>
@@ -75,146 +66,55 @@
 
     <marquee behavior="smooth" direction="left">
       <div class="marquee-content">
-        <img src="imgs/brands/adidas.png" alt="adidas" class="transparent-bg">
-        <img src="imgs/brands/crocs.png" alt="crocs" class="transparent-bg">
-        <img src="imgs/brands/lacoste.png" alt="lacoste" class="transparent-bg">
-        <img src="imgs/brands/new b.png" alt="new balance" class="transparent-bg">
-        <img src="imgs/brands/reebok.png" alt="reebok" class="transparent-bg">
-        <img src="imgs/brands/under.png" alt="under" class="transparent-bg">
-        <img src="imgs/brands/vans.png" alt="vans" class="transparent-bg">
+        <img src="Assets/imgs/brands/adidas.png" alt="adidas" class="transparent-bg">
+        <img src="Assets/imgs/brands/crocs.png" alt="crocs" class="transparent-bg">
+        <img src="Assets/imgs/brands/lacoste.png" alt="lacoste" class="transparent-bg">
+        <img src="Assets/imgs/brands/new b.png" alt="new balance" class="transparent-bg">
+        <img src="Assets/imgs/brands/reebok.png" alt="reebok" class="transparent-bg">
+        <img src="Assets/imgs/brands/under.png" alt="under" class="transparent-bg">
+        <img src="Assets/imgs/brands/vans.png" alt="vans" class="transparent-bg">
       </div>
     </marquee>
 
     <section class="container">
-      <div class="product-content">
-        <h2>Our Products</h2>
-        <hr>
-        <div class="product-card">
-          <h3>Sneakers</h3>
-          <div class="card-container">
-            <div class="card">
-              <img src="" class="card-img-top" alt="">
-              <h4 class="card-title"></h4>
-              <p class="price"></p>
-              <a href="" class="btn-2">Add to Cart</a>
-            </div>
-            <div class="card">
-              <img src="" alt="">
-              <h4></h4>
-              <p class="price"></p>
-              <a href="" class="btn-2">Add to Cart</a>
-            </div>
-            <div class="card">
-              <img src="" alt="">
-              <h4></h4>
-              <p class="price"></p>
-              <a href="" class="btn-2">Add to Cart</a>
-            </div>
-            <div class="card">
-              <img src="" alt="">
-              <h4></h4>
-              <p class="price"></p>
-              <a href="" class="btn-2">Add to Cart</a>
-            </div>
-          </div>
-        </div>
-        <hr>
-        <div class="product-card">
-          <h3>Office Wear</h3>
-          <div class="card-container">
-            <div class="card">
-              <img src="" alt="">
-              <h4></h4>
-              <p class="price"></p>
-              <a href="" class="btn-2">Add to Cart</a>
-            </div>
-            <div class="card">
-              <img src="" alt="">
-              <h4></h4>
-              <p class="price"></p>
-              <a href="" class="btn-2">Add to Cart</a>
-            </div>
-            <div class="card">
-              <img src="" alt="">
-              <h4></h4>
-              <p class="price"></p>
-              <a href="" class="btn-2">Add to Cart</a>
-            </div>
-            <div class="card">
-              <img src="" alt="">
-              <h4></h4>
-              <p class="price"></p>
-              <a href="" class="btn-2">Add to Cart</a>
-            </div>
-          </div>
-        </div>
-        <hr>
-        <div class="product-card">
-          <h3>Ladies Wear</h3>
-          <div class="card-container">
-            <div class="card">
-              <img src="" alt="">
-              <h4></h4>
-              <p class="price"></p>
-              <a href="" class="btn-2">Add to Cart</a>
-            </div>
-            <div class="card">
-              <img src="" alt="">
-              <h4></h4>
-              <p class="price"></p>
-              <a href="" class="btn-2">Add to Cart</a>
-            </div>
-            <div class="card">
-              <img src="" alt="">
-              <h4></h4>
-              <p class="price"></p>
-              <a href="" class="btn-2">Add to Cart</a>
-            </div>
-            <div class="card">
-              <img src="" alt="">
-              <h4></h4>
-              <p class="price"></p>
-              <a href="" class="btn-2">Add to Cart</a>
-            </div>
-          </div>
-        </div>
-        <hr>
-        <div class="product-card">
-          <h3>Children Wear</h3>
-          <div class="card-container">
-            <div class="card">
-              <img src="" alt="">
-              <h4></h4>
-              <p class="price"></p>
-              <a href="" class="btn-2">Add to Cart</a>
-            </div>
-            <div class="card">
-              <img src="" alt="">
-              <h4></h4>
-              <p class="price"></p>
-              <a href="" class="btn-2">Add to Cart</a>
-            </div>
-            <div class="card">
-              <img src="" alt="">
-              <h4></h4>
-              <p class="price"></p>
-              <a href="" class="btn-2">Add to Cart</a>
-            </div>
-            <div class="card">
-              <img src="" alt="">
-              <h4></h4>
-              <p class="price"></p>
-              <a href="" class="btn-2">Add to Cart</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <button class="btn">View More</button>
-
+      <div id="notification" style="display: none;"></div>
+      <h2>Our Products</h2>
+      <div id="product-card"></div>
     </section>
 
-    <script src="script.js"></script>
+    <div class="overlay"></div>
+    <div id="cart-container" class="cart-container" style="display: none;">
+      <span class="closeBtn">&times;</span>
+      <h3>Shopping Cart</h3>
+      <div id="cart-items"></div>
+      <p id="cart-total">Total: Ksh0.00</p>
+      <button class="btn-2" onclick="showCheckout()" id="checkout-btn">Checkout</button>
+    </div>
+
+    <!--Checkout Modal-->
+    <div id="checkout-modal">
+      <h3>Checkout</h3>
+      <div id="checkout-items"></div>
+      <p id="checkout-total">Total: Ksh0.00</p>
+      <div class="modal-buttons">
+          <button class="btn-2" id="close-checkout">Cancel</button>
+          <button class="btn-2" onclick="completePurchase()">Complete Purchase</button>
+      </div>
+  </div>
+
+    <script>
+      function openCart() {
+            document.querySelector('.cart-container').style.display = 'block';
+            document.querySelector('.overlay').style.display = 'block';
+        }
+        document.querySelector('.closeBtn').addEventListener('click', function() {
+            document.querySelector('.cart-container').style.display = 'none';
+            document.querySelector('.overlay').style.display = 'none';
+        });
+    </script>
+
+    <script src="Assets/js/db.js"></script>
+    <script src="Assets/js/script.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
