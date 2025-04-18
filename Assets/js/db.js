@@ -3,7 +3,7 @@ const shoeDatabase = [
     {
         id: 1,
         name: "Running Pro X1",
-        price: 99.99,
+        price: 2500.00,
         imageUrl: "Assets/imgs/shoes/sneaker-1.jpeg",
         category: "Sneakers",
         description: "Lightweight running shoes with extra cushioning"
@@ -11,7 +11,7 @@ const shoeDatabase = [
     {
         id: 2,
         name: "Casual Walker",
-        price: 79.50,
+        price: 2700.00,
         imageUrl: "Assets/imgs/shoes/casual-blue.jpeg",
         category: "Casual",
         description: "Comfortable everyday walking shoes"
@@ -19,7 +19,7 @@ const shoeDatabase = [
     {
         id: 3,
         name: "Air Jordan 11",
-        price: 129.99,
+        price: 4500.00,
         imageUrl: "Assets/imgs/shoes/J-11.jpeg",
         category: "Sneakers",
         description: "High-performance basketball shoes"
@@ -27,7 +27,7 @@ const shoeDatabase = [
     {
         id: 4,
         name: "Ladies casual",
-        price: 149.99,
+        price: 1800.00,
         imageUrl: "Assets/imgs/shoes/casual-ladies-1.jpeg",
         category: "casual",
         description: "Durable hiking boots for extreme conditions"
@@ -35,7 +35,7 @@ const shoeDatabase = [
     {
         id: 5,
         name: "Air-Force 1",
-        price: 60.00,
+        price: 3000.00,
         imageUrl: "Assets/imgs/shoes/Airforce1-white.jpeg",
         category: "Sneakers",
         description: "Classic white sneakers for everyday wear",
@@ -43,7 +43,7 @@ const shoeDatabase = [
     {
         id: 6,
         name: "Converse All-Star",
-        price: 100.00,
+        price: 3500.00,
         imageUrl: "Assets/imgs/shoes/converse-1.jpeg",
         category: "Sneakers",
         description: "Iconic canvas sneakers for casual wear",
@@ -51,7 +51,7 @@ const shoeDatabase = [
     {
         id: 7,
         name: "Sb-Dunk",
-        price: 110.99,
+        price: 2500.00,
         imageUrl: "Assets/imgs/shoes/sb-lowcut.jpeg",
         category: "sneakers",
         description: "Skateboarding shoes with extra grip",
@@ -59,7 +59,7 @@ const shoeDatabase = [
     {
         id: 8,
         name: "Casual Men",
-        price: 86.99,
+        price: 4000.00,
         imageUrl: "Assets/imgs/shoes/casual-brown.jpeg",
         category: "Casual",
         description: "Stylish brown",
@@ -178,7 +178,7 @@ class ShoppingCart {
                     <p>Price: Ksh.${item.shoe.price.toFixed(2)}</p>
                     <input type="number" value="${item.quantity}" min="1" 
                         onchange="cart.updateQuantity(${item.shoe.id}, parseInt(this.value))">
-                    <button onclick="cart.removeItem(${item.shoe.id})">Remove</button>
+                    <button class="btn-2" onclick="cart.removeItem(${item.shoe.id})">Remove</button>
                 </div>
             `;
             cartItems.appendChild(cartItem);
